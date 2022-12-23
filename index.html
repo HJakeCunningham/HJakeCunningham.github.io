@@ -6,10 +6,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-mono">
+    <div class="absolute bottom-0 right-0 p-4">
+      <div id="alert" class="bg-green-600 p-4 rounded drop-shadow-lg invisible">
+        <p class="text-white">Copied to clipboard: jake.cunningham.21@ucl.ac.uk</p>
+      </div>
+    </div>
+
     <div class="flex justify-center mt-[64px]">
-      <div class="w-[710px] sm:w-[500px] md:w-[600px] lg:w-[700px]">
+      <div class="w-[710px] sm:w-[500px] md:w-[600px] lg:w-[750px]">
         <div class="flex">
-          <div class="w-[210px] p-4 sm:w-[140px] md:w-[170px] lg:w-[200px]">
+          <div class="w-[210px] p-4 sm:w-[140px] md:w-[170px] lg:w-[225px]">
             <div>
               <img
                 src="./assets/images/portrait.png"
@@ -23,24 +29,36 @@
               <p>UCL</p>
 
               <div class="flex space-x-1.5 mt-3">
+                <button onclick="copyToClipboard('jake.cunningham.21@ucl.ac.uk')">
+                  <img
+                    class="h-4 w-4"
+                    src="./assets/icons/email.svg"
+                    alt=""
+                  />
+                </button>
                 <a href="https://github.com/HJakeCunningham" target="_blank"
                   ><img class="h-4 w-4" src="./assets/icons/github.svg" alt=""
                 /></a>
+                <a href="https://twitter.com/HJCunningham97" target="_blank">
                 <img class="h-4 w-4" src="./assets/icons/twitter.svg" alt="" />
+                </a>
+                <a href="https://scholar.google.com/citations?user=GEWN-PsAAAAJ&hl=en&oi=sra" target="_blank">
                 <img
                   class="h-4 w-4"
                   src="./assets/icons/google-scholar.svg"
                   alt=""
-                />
-                <img class="h-4 w-4" src="./assets/icons/linkedin.svg" alt="" />
-                <img class="h-4 w-4" src="./assets/icons/cv.svg" alt="" />
+                /></a>
+                <a href="https://www.linkedin.com/in/jake-cunningham-a6091018a/?originalSubdomain=uk" target="_blank">
+                <img class="fill-red-900 h-4 w-4" src="./assets/icons/linkedin.svg" alt="" /></a>
+                <a href="./assets/papers/Jake_Cunningham_CV.pdf" target="_blank">
+                <img class="h-4 w-4" src="./assets/icons/cv_2.svg" alt="" /></a>
               </div>
             </div>
           </div>
           <div
-            class="flex items-center w-[500px] p-4 sm:w-[360px] md:w-[430px] lg:w-[500px]"
+            class="flex items-center w-[500px] p-4 sm:w-[360px] md:w-[430px] lg:w-[525px]"
           >
-            <p class="text-sm">
+            <p class="pl-1 text-sm">
               Hello! I'm a PhD student in the
               <a class="text-blue-400" href="https://www.ucl.ac.uk/ai-centre/"
                 >Foundational AI CDT</a
@@ -48,18 +66,26 @@
               at UCL, supervised by
               <a class="text-blue-400" href="https://deisenroth.cc/"
                 >Marc Deisenroth</a
-              >. My research interests are in developing Bayesian machine
-              learning methods with a particular focus on applications in
+              >. My research igit anterests are in developing Bayesian machine
+              learning and Gaussian processes with a particular focus on applications in
               climate science. <br /><br />
-              Previously, I obtained a MSc. in Computing (AI and Machine
-              Learning) from Imperial College London, during which I worked with
+              Previously, I obtained an MSc. in Computing (AI and Machine
+              Learning) from
+              <a class="text-blue-400" href="https://www.imperial.ac.uk/">
+                Imperial College London</a
+              >, during which I worked with
               <a class="text-blue-400" href="https://mvdw.uk/"
                 >Mark van der Wilk</a
               >
               on connections between Gaussian processes, stochastic partial
               differential equations and the reproducing kernel Hilbert space.
-              Prior to that I completed and an M.Eng. in Engineering Science
-              from the University of Oxford where I worked with
+              <br /><br />
+              Prior to that, I completed an M.Eng. in Engineering Science from
+              the
+              <a class="text-blue-400" href="https://www.ox.ac.uk/"
+                >University of Oxford</a
+              >
+              where I worked with
               <a
                 class="text-blue-400"
                 href="https://sites.google.com/view/tonvandenbremer/"
@@ -69,10 +95,104 @@
             </p>
           </div>
         </div>
-        <div class="flex">
-          <div class="h-24 w-full h-screen"></div>
+        <div class="m-4 mt-5">
+          <h1 class="font-bold underline">Publications</h1>
+
+          <!-- Publication -->
+          <div class="flex items-center min-h-[40px]">
+            <div class="lg:w-[275px] py-4 pr-4">
+              <img class="border" src="./assets/images/ASVGP.png" alt="" />
+            </div>
+            <div>
+              <div class="lg:w-[475px] p-4 space-y-1">
+                <h1 class="text-sm font-bold">
+                  Actually Sparse Variational Gaussian Processes
+                </h1>
+                <p class="text-sm">
+                  <span class="underline">J Cunningham</span>, D Augusto de
+                  Souza, S Takao, M van der Wilk, M Deisenroth
+                </p>
+                <p class="text-sm italic">
+                  In NeurIPS Workshop on Gaussian Processes, Spatiotemporal
+                  Modeling, and Decision-making Systems, 2022
+                </p>
+                <div class="flex space-x-1 text-xs">
+                  <a
+                    class="border border-black p-1 rounded"
+                    href="https://gp-seminar-series.github.io/neurips-2022/assets/camera_ready/48.pdf"
+                    type="button"
+                    target="_blank"
+                    >PDF</a
+                  >
+                  <a
+                    class="border border-black p-1 rounded"
+                    href="https://gp-seminar-series.github.io/neurips-2022/assets/camera_ready/48_poster.pdf"
+                    type="button"
+                    target="_blank"
+                    >Poster</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication -->
+          <div class="flex items-center min-h-[40px]">
+            <div class="lg:w-[250px] py-4 pr-4">
+              <img
+                class="border"
+                src="./assets/images/Aliche_Maps.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="lg:w-[450px] p-4 space-y-1">
+                <h1 class="text-sm font-bold">
+                  The Role of the Unsteady Surface Wave-Driven Ekman–Stokes Flow
+                  in the Accumulation of Floating Marine Litter
+                </h1>
+                <p class="text-sm">
+                  <span class="underline">J Cunningham</span>, C Higgins, T van
+                  den Bremer
+                </p>
+                <p class="text-sm italic">
+                  Journal of Geophysical Research: Oceans, 2022
+                </p>
+                <div class="flex space-x-1 text-xs">
+                  <div class="flex space-x-1 text-xs">
+                    <a
+                      class="border border-black p-1 rounded"
+                      href="./assets/papers/JGR Oceans - 2022 - Cunningham - The Role of the Unsteady Surface Wave‐Driven Ekman Stokes Flow in the Accumulation of.pdf"
+                      type="button"
+                      target="_blank"
+                      >PDF</a
+                    >
+                    <a
+                    class="border border-black p-1 rounded"
+                    href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JC018106"
+                    type="button"
+                    target="_blank"
+                    >Paper</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      function copyToClipboard(value) {
+        navigator.clipboard.writeText(value);
+
+        document.getElementById('alert').classList.remove('invisible');
+
+        setTimeout(() => {
+          document.getElementById('alert').classList.add('invisible');
+        }, 5000)
+      }
+    </script>
+
   </body>
 </html>
