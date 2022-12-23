@@ -6,13 +6,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-mono">
-    <div class="absolute bottom-0 right-0 p-4">
-      <div id="alert" class="bg-green-600 p-4 rounded drop-shadow-lg invisible">
+    <div class="fixed z-50 top-0 lg:bottom-0 md:bottom-0 sm:bottom-0 lg:right-0 md:right-0 sm:right-0 p-4">
+      <div id="alert" class="text-sm bg-green-600 p-3 rounded drop-shadow-lg invisible">
         <p class="text-white">Copied to clipboard: jake.cunningham.21@ucl.ac.uk</p>
       </div>
     </div>
 
-    <div class="flex justify-center lg:mt-[64px] md:mt-[64px] sm:mt-[64px]">
+    <div class="flex justify-center lg:mt-[64px] md:mt-[64px] sm:mt-[64px] lg:mb-[64px] md:mb-[64px] sm:mb-[64px]">
       <div class="w-[710px] sm:w-[500px] md:w-[600px] lg:w-[750px]">
         <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row">
           <div class="flex flex-row items-center lg:flex-col md:flex-col sm:flex-col w-full p-4 sm:w-[140px] md:w-[170px] lg:w-[225px]">
@@ -37,7 +37,7 @@
                     alt=""
                   />
                 </button>
-                <a href="https://github.com/HJakeCunningham" target="_blank"
+                <a class="relative" href="https://github.com/HJakeCunningham" target="_blank"
                   ><img class="h-4 w-4" src="./assets/icons/github.svg" alt=""
                 /></a>
                 <a href="https://twitter.com/HJCunningham97" target="_blank">
@@ -99,7 +99,7 @@
 
           <div class="p-4 lg:hidden md:hidden sm:hidden">
             <div class="flex justify-between">
-              <button onclick="copyToClipboard('jake.cunningham.21@ucl.ac.uk')">
+              <button class="relative" onclick="copyToClipboard('jake.cunningham.21@ucl.ac.uk')">
                 <img
                   class="h-7 w-7"
                   src="./assets/icons/email.svg"
@@ -130,8 +130,8 @@
           <h1 class="font-bold underline">Publications</h1>
 
           <!-- Publication -->
-          <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row items-center min-h-[40px]">
-            <div class="lg:w-[275px] py-4 pr-4">
+          <div class="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center min-h-[40px]">
+            <div class="lg:w-[275px] py-4 lg:pr-4">
               <img class="border" src="./assets/images/ASVGP.png" alt="" />
             </div>
             <div>
@@ -168,8 +168,8 @@
           </div>
 
           <!-- Publication -->
-          <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row items-center min-h-[40px]">
-            <div class="lg:w-[250px] py-4 pr-4">
+          <div class="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center min-h-[40px]">
+            <div class="lg:w-[275px] py-4 lg:pr-4">
               <img
                 class="border"
                 src="./assets/images/Aliche_Maps.png"
@@ -212,6 +212,7 @@
         </div>
       </div>
     </div>
+
 
     <script>
       function copyToClipboard(value) {
