@@ -9,7 +9,7 @@ module.exports = {
   name: "Jake Cunningham",
   portrait: "./assets/images/portrait.png",
   // Short lines shown under the name
-  tagline: ["Machine Learning", "PhD Student", "UCL"],
+  tagline: ["Machine Learning", "PhD Student", "UCL/Cartesia"],
 
   // Used by the email "copy to clipboard" button and the CV link
   email: "jake.cunningham.21@ucl.ac.uk",

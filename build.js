@@ -108,7 +108,7 @@ const html = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="font-mono">
+  <body class="font-mono pb-20 lg:pb-32">
     <div class="fixed z-50 top-0 lg:bottom-0 md:bottom-0 sm:bottom-0 lg:right-0 md:right-0 sm:right-0 p-4">
       <div id="alert" class="text-sm bg-green-600 p-3 rounded drop-shadow-lg invisible">
         <p class="text-white">Copied to clipboard: ${site.email}</p>
