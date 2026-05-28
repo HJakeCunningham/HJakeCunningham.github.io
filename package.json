@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tailwindcss -i ./input.css -o ./dist/output.css -w",
-    "build": "npx tailwindcss -o build.css --minify"
+    "build:html": "node build.js",
+    "build:css": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "build": "npm run build:html && npm run build:css",
+    "dev": "node build.js && tailwindcss -i ./input.css -o ./dist/output.css --watch",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
